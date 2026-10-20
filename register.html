@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1"><meta name="color-scheme" content="light dark"><meta name="description" content="Create a DayFlow account."><title>Register | DayFlow</title><link rel="stylesheet" href="CSS/style.css"><script src="js/register.js" defer></script></head>
+<body><a class="skip-link" href="#main-content">Skip to main content</a><div class="theme-control"><input type="checkbox" id="theme-toggle" aria-label="Toggle dark mode"><label for="theme-toggle">🌙 Dark mode</label></div>
+<header><h1>Create a DayFlow Account</h1><p>Register to start planning your day.</p><nav aria-label="Main navigation">
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="contact.html">Contact</a>
+      <a href="register.html">Register</a>
+      <a href="data.html">Data</a>
+    </nav></header>
+<main id="main-content"><section aria-labelledby="register-heading"><h2 id="register-heading">Registration Form</h2><p>All fields are required. Errors appear below the relevant fields.</p>
+<form id="registration-form" action="#" method="get" novalidate>
+<div class="form-group"><label for="name">Name</label><input type="text" id="name" name="name" autocomplete="name" required aria-describedby="name-error"><p class="field-error" id="name-error" aria-live="polite"></p></div>
+<div class="form-group"><label for="email">Email</label><input type="email" id="email" name="email" autocomplete="email" required aria-describedby="email-error"><p class="field-error" id="email-error" aria-live="polite"></p></div>
+<div class="form-group"><label for="password">Password</label><input type="password" id="password" name="password" autocomplete="new-password" required aria-describedby="password-error"><p class="field-error" id="password-error" aria-live="polite"></p></div>
+<div class="form-group"><label for="confirm-password">Confirm password</label><input type="password" id="confirm-password" name="confirm-password" autocomplete="new-password" required aria-describedby="confirm-password-error"><p class="field-error" id="confirm-password-error" aria-live="polite"></p></div>
+<div class="form-group"><label for="age">Age</label><input type="number" id="age" name="age" min="1" max="120" step="1" inputmode="numeric" required aria-describedby="age-error"><p class="field-error" id="age-error" aria-live="polite"></p></div>
+<div id="form-status" class="alert" role="status" aria-live="polite" hidden></div><button type="submit">Create account</button> <button type="reset" class="button-secondary">Clear form</button>
+</form></section></main><footer><p>&copy; 2026 DayFlow</p></footer></body></html>

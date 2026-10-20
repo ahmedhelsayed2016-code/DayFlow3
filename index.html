@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="color-scheme" content="light dark">
+  <meta name="description" content="DayFlow helps you plan your day, track progress, and build better routines.">
+  <title>DayFlow | Plan your day</title>
+  <link rel="stylesheet" href="CSS/style.css">
+</head>
+<body>
+  <a class="skip-link" href="#main-content">Skip to main content</a>
+  <div class="theme-control">
+    <input type="checkbox" id="theme-toggle" aria-label="Toggle dark mode">
+    <label for="theme-toggle">🌙 Dark mode</label>
+  </div>
+  <header>
+    <h1>DayFlow</h1>
+    <p>Plan your day. Track your progress.</p>
+    <nav aria-label="Main navigation">
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="contact.html">Contact</a>
+      <a href="register.html">Register</a>
+      <a href="data.html">Data</a>
+    </nav>
+  </header>
+  <main id="main-content">
+    <div class="component-grid">
+      <section id="today-plan" aria-labelledby="plan-heading">
+        <img src="images/Today's plan.png" alt="Illustration of a person planning daily tasks" width="600">
+        <h2 id="plan-heading">Today's Plan</h2>
+        <p>DayFlow helps you manage your time, track daily progress, and see how you improve over time.</p>
+        <h3>Example Daily Tasks</h3>
+        <ul>
+          <li>Eat 150 grams of protein</li>
+          <li>Solve three easy LeetCode questions</li>
+          <li>Finish the database assignment</li>
+          <li>Sleep for eight hours</li>
+        </ul>
+      </section>
+      <section id="progress" aria-labelledby="progress-heading">
+        <h2 id="progress-heading">Progress Overview</h2>
+        <p>Write down what you want to improve and track in different areas of your life.</p>
+        <h3>Example Goals</h3>
+        <ol>
+          <li>Complete daily tasks</li>
+          <li>Build a consistent sleep routine</li>
+          <li>Manage time well</li>
+          <li>Track personal progress</li>
+        </ol>
+        <div class="alert alert-success" role="status">
+          <p class="alert-title">Progress tip</p>
+          <p>Small, consistent steps can build lasting routines.</p>
+        </div>
+      </section>
+      <section id="focus" aria-labelledby="focus-heading">
+        <h2 id="focus-heading">Today's Focus</h2>
+        <p>Keep these priorities in mind throughout your day.</p>
+        <ol>
+          <li>Go to sleep at 10 p.m.</li>
+          <li>Eat healthy meals</li>
+          <li>Keep phone usage below two hours</li>
+        </ol>
+        <article>
+          <h3>Daily Reminder</h3>
+          <p>“You will never see the end of the road if you don't take your first step.”</p>
+        </article>
+      </section>
+    </div>
+
+    <section id="components" aria-labelledby="components-heading">
+      <h2 id="components-heading">Component Library</h2>
+      <div class="component-grid">
+        <section aria-labelledby="form-heading">
+          <h3 id="form-heading">Form Elements</h3>
+          <form action="#" method="get">
+            <div class="form-group">
+              <label for="demo-name">Full name</label>
+              <input id="demo-name" name="name" type="text" autocomplete="name" placeholder="Enter your name" required>
+            </div>
+            <div class="form-group">
+              <label for="demo-email">Email address</label>
+              <input id="demo-email" name="email" type="email" autocomplete="email" aria-describedby="email-help" placeholder="name@example.com" required>
+              <p id="email-help" class="help-text">Enter a valid email address.</p>
+            </div>
+            <div class="form-group">
+              <label for="demo-category">Main goal</label>
+              <select id="demo-category" name="goal" required>
+                <option value="">Choose a goal</option>
+                <option value="productivity">Improve productivity</option>
+                <option value="routine">Build better routines</option>
+                <option value="progress">Track progress</option>
+              </select>
+            </div>
+            <div class="button-row">
+              <button type="submit">Submit</button>
+              <button class="button-secondary" type="reset">Reset</button>
+            </div>
+          </form>
+        </section>
+        <section aria-labelledby="modal-heading">
+          <h3 id="modal-heading">CSS-only Modal</h3>
+          <p>Open a sample modal without JavaScript.</p>
+          <input class="modal-toggle" type="checkbox" id="modal-toggle" aria-label="Toggle welcome dialog">
+          <label class="button modal-trigger" for="modal-toggle">Open modal</label>
+          <div class="modal-overlay">
+            <div class="modal-content" role="dialog" aria-labelledby="dialog-title" aria-describedby="dialog-description">
+              <h3 id="dialog-title">Welcome to DayFlow</h3>
+              <p id="dialog-description">This modal is built with HTML and CSS only. Use the close control to return to the page.</p>
+              <div class="modal-actions"><label class="button button-secondary modal-close" for="modal-toggle">Close modal</label></div>
+            </div>
+          </div>
+        </section>
+        <section aria-labelledby="alerts-heading">
+          <h3 id="alerts-heading">Alerts &amp; Notifications</h3>
+          <div class="alert alert-success" role="status">
+            <p class="alert-title">Success</p>
+            <p>Your changes have been saved successfully.</p>
+          </div>
+          <div class="alert alert-error" role="alert">
+            <p class="alert-title">Action needed</p>
+            <p>Please check your information and try again.</p>
+          </div>
+        </section>
+      </div>
+    </section>
+  </main>
+  <footer><p>&copy; 2026 DayFlow</p></footer>
+</body>
+</html>

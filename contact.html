@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="color-scheme" content="light dark">
+  <meta name="description" content="Tell DayFlow about your daily planning goals and routines.">
+  <title>Contact | DayFlow</title>
+  <link rel="stylesheet" href="CSS/style.css">
+</head>
+<body>
+  <a class="skip-link" href="#main-content">Skip to main content</a>
+  <div class="theme-control">
+    <input type="checkbox" id="theme-toggle" aria-label="Toggle dark mode">
+    <label for="theme-toggle">🌙 Dark mode</label>
+  </div>
+  <header>
+    <h1>DayFlow</h1><p>Plan your day. Track your progress.</p>
+    <nav aria-label="Main navigation">
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="contact.html">Contact</a>
+      <a href="register.html">Register</a>
+      <a href="data.html">Data</a>
+    </nav>
+  </header>
+  <main id="main-content">
+    <section aria-labelledby="contact-heading">
+      <h2 id="contact-heading">Tell Us About Your Day</h2>
+      <p>Help us understand how you use DayFlow and what you would like to improve in your daily routine.</p>
+      <form action="#" method="get">
+        <div class="form-group"><label for="name">Name</label><input type="text" id="name" name="name" autocomplete="name" required></div>
+        <div class="form-group"><label for="email">Email</label><input type="email" id="email" name="email" autocomplete="email" required></div>
+        <div class="form-group"><label for="tasks">How many tasks do you usually plan per day?</label><input type="number" id="tasks" name="tasks" min="1" inputmode="numeric"></div>
+        <div class="form-group"><label for="start-date">What date would you like to start tracking?</label><input type="date" id="start-date" name="start-date"></div>
+        <fieldset>
+          <legend>Main goal with DayFlow</legend>
+          <div><input type="radio" id="productivity" name="goal" value="productivity"><label for="productivity">Improve productivity</label></div>
+          <div><input type="radio" id="routine" name="goal" value="routine"><label for="routine">Build better routines</label></div>
+          <div><input type="radio" id="progress" name="goal" value="progress"><label for="progress">Track personal progress</label></div>
+        </fieldset>
+        <fieldset>
+          <legend>Which areas would you like to improve?</legend>
+          <div><input type="checkbox" id="sleep" name="areas" value="sleep"><label for="sleep">Sleep</label></div>
+          <div><input type="checkbox" id="fitness" name="areas" value="fitness"><label for="fitness">Fitness</label></div>
+          <div><input type="checkbox" id="study" name="areas" value="study"><label for="study">Study</label></div>
+          <div><input type="checkbox" id="time" name="areas" value="time"><label for="time">Time management</label></div>
+        </fieldset>
+        <div class="form-group"><label for="frequency">How often do you currently plan your day?</label><select id="frequency" name="frequency"><option value="never">Never</option><option value="sometimes">Sometimes</option><option value="often">Often</option><option value="daily">Every day</option></select></div>
+        <div class="form-group"><label for="message">What would you like DayFlow to help you improve?</label><textarea id="message" name="message" rows="5"></textarea></div>
+        <button type="submit">Send</button>
+      </form>
+    </section>
+  </main>
+  <footer><p>&copy; 2026 DayFlow</p></footer>
+</body>
+</html>
